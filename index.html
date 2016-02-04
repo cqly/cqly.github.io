@@ -13,7 +13,7 @@
 	<meta property="og:description"   content="Your description" />
 	<meta property="og:image"         content="http://ammadmin.azurewebsites.net/images/JyDoJgPz9Y7DfVlemMKIZgtt.jpg" />
 	
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 <!-- <div id="fb-root"></div> -->
@@ -36,5 +36,29 @@
 
 </p>
 
+<script>
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1005759426133580',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+	FB.ui(
+	{
+		method: 'share',
+		href: 'https://developers.facebook.com/docs/'
+	}, function(response){});
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+</script
 </body>
 </html>
